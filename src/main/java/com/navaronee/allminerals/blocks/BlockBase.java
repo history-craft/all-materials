@@ -15,9 +15,9 @@ public class BlockBase extends Block implements IHasModel
 {
 	private String oreDict;
 	
-	public BlockBase(String name, Material material,  int harvestLevel, String oreDict) 
+	public BlockBase(String name, int harvestLevel, String oreDict) 
 	{
-		super(material);
+		super(Material.ROCK);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
@@ -31,7 +31,7 @@ public class BlockBase extends Block implements IHasModel
 	}
 	
 	public BlockBase(String name, Material material) {
-		this(name,material,0,null);
+		this(name,0,null);
 	}
 	
 	public void initOreDict() {

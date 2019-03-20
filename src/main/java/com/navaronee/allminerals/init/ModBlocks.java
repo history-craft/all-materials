@@ -13,7 +13,7 @@ public class ModBlocks
 {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
-	public static final Block CHALCOPYRITE_ORE = new BlockBase("chalcopyrite_ore",Material.ROCK,2,"oreChalcopyrite");
+	public static final Block CHALCOPYRITE_ORE = new BlockBase("chalcopyrite_ore",2,"oreChalcopyrite");
 	
 	
 }
